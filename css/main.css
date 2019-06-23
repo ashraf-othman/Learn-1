@@ -1,0 +1,387 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+#scrollspy, .container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w_f, .header ul, .header .logo {
+  width: 50%;
+  float: left;
+}
+
+.get-touch .line, .service span, .nead span, #home span {
+  width: 40px;
+  height: 2px;
+  display: block;
+  background: #f05f40;
+  margin: 1rem auto;
+}
+
+.download button, .nead button, #home button {
+  color: #fff;
+  background-color: #f05f40;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  margin: 10px auto;
+}
+.download button:hover, .nead button:hover, #home button:hover {
+  color: #f05f40;
+  background-color: #fff;
+}
+
+.h2, .get-touch h2, .download h2, .service h2, .nead h2, #home h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.p, .nead p, #home p {
+  color: #c9c5bd;
+  margin: 1rem 0;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.items .fa-1 {
+  color: #f05f40;
+}
+
+.items .fa-2 {
+  color: #f05f40;
+}
+
+.items .fa-3 {
+  color: #f05f40;
+}
+
+.items .fa-4 {
+  color: #f05f40;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
+/*header ==================*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid #333;
+}
+.header .logo h2 {
+  color: #c9c5bd;
+}
+.header ul {
+  display: flex;
+}
+.header ul li {
+  padding: 10px 15px;
+}
+.header ul li a {
+  color: #c9c5bd;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.8s ease-in-out 1s;
+  -webkit-transition: all 0.8s ease-in-out 1s;
+  -moz-transition: all 0.8s ease-in-out 1s;
+  -ms-transition: all 0.8s ease-in-out 1s;
+  -o-transition: all 0.8s ease-in-out 1s;
+}
+.header ul li a:hover {
+  color: #f05f40;
+}
+
+/*home ===============*/
+#home {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.8)), url(../img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home button {
+  transition: all 0.8s ease-in-out 1s;
+  -webkit-transition: all 0.8s ease-in-out 1s;
+  -moz-transition: all 0.8s ease-in-out 1s;
+  -ms-transition: all 0.8s ease-in-out 1s;
+  -o-transition: all 0.8s ease-in-out 1s;
+}
+#home button:hover {
+  background-color: #fff;
+  color: #f05f40;
+  border-radius: 0;
+}
+
+/*need ==============*/
+.nead {
+  background-color: #f05f40;
+  color: #fff;
+  padding: 2rem 0;
+}
+.nead span {
+  background-color: #fff;
+}
+.nead button {
+  background-color: #fff;
+  color: #212567;
+  transition: all 0.8s ease-in-out 1s;
+  -webkit-transition: all 0.8s ease-in-out 1s;
+  -moz-transition: all 0.8s ease-in-out 1s;
+  -ms-transition: all 0.8s ease-in-out 1s;
+  -o-transition: all 0.8s ease-in-out 1s;
+}
+.nead button:hover {
+  color: #fff;
+  background-color: #212567;
+  border-radius: 0;
+}
+
+/*service ================*/
+.service {
+  padding: 5rem;
+  background: #fff;
+}
+.service h2 {
+  color: #212567;
+}
+.service p {
+  color: #212567;
+}
+.service .items {
+  margin: 10px auto;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.service .items .item h3 {
+  margin: 1rem 0;
+  color: #333;
+}
+
+/*images*/
+.images .container {
+  display: grid;
+  font-size: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+.images .container .parent-img {
+  position: relative;
+  overflow: hidden;
+}
+.images .container .parent-img img {
+  width: 100%;
+}
+.images .container .parent-img:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  right: 0;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  background: rgba(240, 95, 64, 0.5);
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+.images .container .parent-img:hover:after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.download {
+  background: #212567;
+  padding: 5rem 0;
+  margin: 20px auto;
+}
+.get-touch {
+  text-transform: capitalize;
+  padding: 5rem 0;
+}
+.get-touch h2 {
+  color: #333;
+}
+.get-touch .touch {
+  display: flex;
+  justify-content: center;
+}
+.get-touch .touch .item {
+  margin: 1rem 1.5rem;
+}
+.get-touch .touch .item i {
+  display: block;
+}
+.get-touch .touch .item:last-child span {
+  color: #f05f40;
+}
+
+@media (max-width: 575px) {
+  .h2, #home h2, .nead h2, .service h2, .download h2, .get-touch h2 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  ul li {
+    padding: 10px 5px !important;
+  }
+
+  .service .items {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media (max-width: 768px) {
+  .h2, #home h2, .nead h2, .service h2, .download h2, .get-touch h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .p, #home p, .nead p {
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 14px !important;
+  }
+
+  .w_f, .header .logo, .header ul {
+    width: 100%;
+    float: none;
+  }
+
+  .header .logo {
+    text-align: center;
+  }
+  .header ul {
+    display: flex;
+    justify-content: center !important;
+  }
+  .header ul li {
+    padding: 10px 5px !important;
+  }
+
+  #home {
+    height: 50vh;
+  }
+
+  .service {
+    padding: 2rem;
+  }
+  .service .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .images .container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .download {
+    padding: 2rem 0;
+  }
+
+  .get-touch {
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 575px) and (max-width: 1170px) {
+  .service .items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
